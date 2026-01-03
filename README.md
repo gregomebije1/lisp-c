@@ -9,7 +9,7 @@
     - `xcode-select --install`
     - `brew install readline`
 
-## Compile and run
+## Compile and run
     - `gcc -std=c99 -Wall -g lisp.c -lreadline -o lisp -lm`
     - `./lisp`
     - `valgrind --leak-check=full ./lisp`
