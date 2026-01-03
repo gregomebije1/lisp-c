@@ -1,6 +1,28 @@
 # A Lisp interpreter written in the C programming language
 
-## Goal
+## Setup
+- Linux: 
+    - `sudo apt-get install build-essential`
+    - `sudo apt-get install libreadline-dev`
+- Mac: 
+    - install command line tools 
+    - `xcode-select --install`
+    - `brew install readline`
+
+## Compile and run
+    - `gcc -std=c99 -Wall -g lisp.c -lreadline -o lisp -lm`
+    - `./lisp`
+    - `valgrind --leak-check=full ./lisp`
+
+## Done
+- Try simple arithmetic operators +, -, *, /, %, ^, min, max 
+- `(+ 1 (* 2 3))`
+- `(* 1 (* 2 3) (- 5 4) (/ 6 3))`
+- `(^ 4 2)`
+- `(% 6 4)`
+- `(min 8 4 (max (+ 5 9) 3 2 6))`
+
+## TODO 
 - My aim is for the Lisp interpreter to be able to run this code from Paul Graham's version of the Lisp 1.5
 
 ```clojure
@@ -73,21 +95,5 @@
 
 
 ```
-## Setup
-- Linux: 
-    - `sudo apt-get install build-essential`
-    - `sudo apt-get install libreadline-dev`
-    - `gcc -std=c99 -Wall -g lisp.c -lreadline -o lisp`. //Link readline library
-    - `valgrind --leak-check=full ./lisp`
-- Mac: 
-    - install command line tools 
-    - `xcode-select --install`
-    - `brew install readline`
-
-
-## Done
-- Try simple arithmetic operators +, * 
-- ```(+ 1 (* 2 3))```
-
 ## Reference
 - https://en.cppreference.com/w/c.html
