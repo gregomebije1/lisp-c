@@ -10,9 +10,9 @@
     - `brew install readline`
 
 ## Compile and run
-    - `gcc -std=c99 -Wall -g lisp.c -lreadline -o lisp -lm`
-    - `./lisp`
-    - `valgrind --leak-check=full ./lisp`
+    -  `gcc -std=c99 -Wall -g lisp.c -lreadline -o lisp -lm`
+    -  `./lisp`
+    -  `valgrind --leak-check=full ./lisp`
 
 ## Done
 - Try simple arithmetic operators +, -, *, /, %, ^, min, max 
@@ -97,3 +97,4 @@
 ```
 ## Reference
 - https://en.cppreference.com/w/c.html
+- https://www.buildyourownlisp.com/
